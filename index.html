@@ -17,6 +17,10 @@
     li {
         float: left;
     }
+    #signin{
+   background-color:#3466d3;
+   color:white;
+  }
 
     li a{
         display:block;
@@ -52,15 +56,37 @@ background-image:url(https://upload.wikimedia.org/wikipedia/commons/e/e9/Vector_
 background-repeat: no-repeat;
 background-position: 15px 15px;
 background-size:12px;
+}
+.button{
+    background-color: rgb(241, 241, 241);
+    color:rgb(109, 109, 109);
+    margin-top: 30px;
+    border-style: none;
+    padding: 10px 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+   }
 
-
+.button:hover{
+    border-style:solid ;
+    border width: 1px ;
+    color: black;
 }
 
-.signin{
+#signin{
    background-color:#3466d3;
    color:white;
-  }
- 
+
+}
+.footer{
+   position: absolute;
+   bottom: 10px;
+
+}
+}
+
        
         
     }
@@ -72,7 +98,7 @@ background-size:12px;
     <ul>
         <li><a class= "active" href="#about">About</a></li>
         <li><a href="#store">Store</a>  </li>        
-        <li class="signin"  style="float: right;"><a href="#signin">Sign in</a></li> 
+        <li id="signin"  style="float: right"><a href="#signin">Sign in</a></li> 
         <li style="float: right;"><a href="#images">Images</a></li>
         <li style="float: right;"><a href="#gmail">Gmail</a></li>
     </ul>
@@ -83,8 +109,23 @@ background-size:12px;
          <input class="search" type="text"> 
                        </div> 
         </div>
-   </center>     
-    
-    
+<div>
+    <button class="button" type="button">Google Search</button>
+    <button class="button" type="button">I'm Feeling Lucky</button>
+</div>
+   </center>         
 </body>
-    
+<footer>
+    <div class="footer">
+        <ul>
+            <li><a href="advertising">Advertising</a></li>
+            <li><a href="Business">Business</a> </li>
+            <li><a href="howsearchworks">How Search works</a></li>
+            <li style="float: right;"><a href="settings">Settings</a></li>
+            <li style="float: right;"><a href="terms">Terms</a></li>
+            <li style="float: right;"><a href="privacy">Privacy</a></li>
+            
+            
+        </ul>
+    </div>
+</footer>
